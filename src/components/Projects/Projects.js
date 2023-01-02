@@ -3,13 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import edirr from "../../Assets/edirr.gif";
-import emotion from "../../Assets/Projects/emotion.png";
 import online_therapy from "../../Assets/online_therapy.gif";
 import instagram from "../../Assets/instagram.gif";
-import suicide from "../../Assets/Projects/suicide.png";
-
-
+import sign from "../../Assets/sign.gif"
 function Projects() {
+  
   
   return (
     <Container fluid className="project-section">
@@ -53,6 +51,16 @@ function Projects() {
               title="online mental therapy"
               description="this project want to solve peoples's insecurity to go to physcologiest.this web app developed by php "
                 ghLink="https://github.com/Afiya21/onlineTherapy"
+                        
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+               imgPath={sign}
+              isBlog={false}
+              title="sign languge detection"
+              description="this project want to communicate people that use sign langueg as mother languge and oher people who can't sign languge"
+                      ghLink="https://github.com/Afiya21/handsign-detection"
                         
             />
           </Col>
